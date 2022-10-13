@@ -1,4 +1,4 @@
-package com.iocs.core.passByValue;
+package com.iocs.core.passByReference;
 
 public class Main {
 
@@ -15,7 +15,7 @@ public class Main {
     }
 
     public void method2(Email email){
-        email.setMessage("Updated Message");
+        email = new Email("Updated Message");
     }
 
     class Email{
